@@ -1,0 +1,12 @@
+<!-- autoplay doesn't work -->
+<audio src="sound.mp3" controls></audio>
+
+<!-- script to manually load audio and play -->
+<button onclick="load()">New Message</button>
+<script>
+	function load() {
+		audio = new Audio('sound.mp3')
+		// api calls or some other processing
+		audio.play()
+	}
+</script>
